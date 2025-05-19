@@ -1,0 +1,164 @@
+:root {
+    /* Color palette */
+    --primary-color: #003366; /* Midnight Blue */
+    --primary-light: #004488;
+    --text-color: #333333;
+    --muted-color: #6c757d;
+    --light-gray: #f8f9fa;
+    --border-color: #dee2e6;
+    --white: #ffffff;
+    
+    /* Spacing */
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+}
+
+/* Base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* Header styles */
+header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--space-sm);
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--muted-color);
+    max-width: 500px;
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-md);
+}
+
+.social-icons a {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-light);
+}
+
+/* Tab navigation */
+.nav-tabs {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-color);
+    font-weight: 600;
+    border: none;
+    padding: var(--space-md) var(--space-lg);
+    transition: color 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    color: var(--primary-light);
+    border: none;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Card styles */
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.card-title {
+    color: var(--primary-color);
+    margin-bottom: var(--space-sm);
+}
+
+.card-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-md);
+}
+
+.card-text {
+    font-size: 0.95rem;
+    margin-bottom: var(--space-md);
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .social-icons {
+        justify-content: flex-start;
+        margin-top: var(--space-md);
+    }
+    
+    .nav-tabs .nav-link {
+        padding: var(--space-sm) var(--space-md);
+    }
+}
+
+/* Animation for tab transitions */
+.tab-pane.fade {
+    transition: opacity 0.15s linear;
+}
+
+/* Ensure cards in rows have equal height */
+.row-cols-md-2 > .col,
+.row > .col-md-6 {
+    margin-bottom: var(--space-md);
+}
