@@ -6,16 +6,19 @@
     <title>Kevin Terhar - Personal Portfolio</title>
     
     <!-- Meta tags for SEO and sharing -->
-    <meta name="description" content="Kevin Terhar's personal portfolio and life dashboard.">
-    <meta name="keywords" content="Kevin Terhar, portfolio, professional">
+    <meta name="description" content="Kevin Terhar's personal portfolio.">
+    <meta name="keywords" content="Kevin Terhar, DeFi, crypto, DLT, treasury, liquidity risk">
     
     <!-- Open Graph tags for social media sharing -->
     <meta property="og:title" content="Kevin Terhar - Personal Portfolio">
-    <meta property="og:description" content="Kevin Terhar's personal portfolio and life dashboard.">
+    <meta property="og:description" content="Kevin Terhar's personal portfolio.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kevinterhar.com">
-    <!-- TODO: Add actual image URL for sharing -->
-    <meta property="og:image" content="https://kevinterhar.com/thumbnail.jpg">
+    <!-- Image URL for sharing -->
+    <meta property="og:image" content="https://kevinterhar.com/headshot.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,16 +39,17 @@
     <header class="sticky-top">
         <div class="container py-4">
             <div class="row align-items-center">
-                <div class="col-md-8">
+                <div class="col-md-10">
                     <h1>Kevin Terhar</h1>
-                    <p class="tagline">Problem solver, builder, and continuous learner.<br>Focused on creating value and meaningful connections.</p>
+                    <p class="tagline">
+                        <span style="white-space: nowrap;">"I have not failed. I've just found 10,000 ways that won't work." - T. Edison</span><br>
+                        Currently in the 300-500 ways ballpark
+                    </p>
                 </div>
-                <div class="col-md-4 text-md-end">
+                <div class="col-md-2 text-md-end">
                     <div class="social-icons">
-                        <!-- TODO: Replace with actual profile URLs -->
-                        <a href="#" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank" aria-label="Discord Profile"><i class="fab fa-discord"></i></a>
-                        <a href="#" target="_blank" aria-label="Telegram Profile"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.linkedin.com/in/kevin-terhar/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://discordapp.com/users/1309134804616478764" target="_blank" aria-label="Discord Profile"><i class="fab fa-discord"></i></a>
                     </div>
                 </div>
             </div>
@@ -67,18 +71,21 @@
             </li>
         </ul>
 
+
+
         <!-- Tab Content -->
         <div class="tab-content py-4" id="myTabContent">
             <!-- Learn Tab -->
             <div class="tab-pane fade show active" id="learn-tab-pane" role="tabpanel" aria-labelledby="learn-tab" tabindex="0">
                 <div class="row g-4">
+
                     <!-- Learn Card 1 -->
                     <div class="col-md-6">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h5 class="card-title"><a href="#" class="card-title-link">Machine Learning Journey</a></h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Python & TensorFlow</h6>
-                                <p class="card-text">Exploring the world of AI and machine learning through practical projects and continuous learning. Building models that solve real-world problems.</p>
+                                <h5 class="card-title"><a href="#" class="card-title-link">Title</a></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Subtitle</h6>
+                                <p class="card-text">Description</p>
                             </div>
                         </div>
                     </div>
@@ -87,9 +94,9 @@
                     <div class="col-md-6">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h5 class="card-title"><a href="#" class="card-title-link">Web Development Mastery</a></h5>
-                                <h6 class="card-subtitle mb-2 text-muted">JavaScript & Modern Frameworks</h6>
-                                <p class="card-text">From vanilla JavaScript to modern frameworks like React and Vue. Building responsive, accessible, and performant web applications.</p>
+                                <h5 class="card-title"><a href="#" class="card-title-link">Title</a></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Subtitle</h6>
+                                <p class="card-text">Description</p>
                             </div>
                         </div>
                     </div>
@@ -98,9 +105,9 @@
                     <div class="col-md-6">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h5 class="card-title"><a href="#" class="card-title-link">Data Science & Analytics</a></h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Python, Pandas & Visualization</h6>
-                                <p class="card-text">Analyzing complex datasets to extract meaningful insights. Using statistical methods and data visualization to tell compelling stories.</p>
+                                <h5 class="card-title"><a href="#" class="card-title-link">Title</a></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Subtitle</h6>
+                                <p class="card-text">Description</p>
                             </div>
                         </div>
                     </div>
@@ -115,9 +122,70 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Learn Card 5 -->
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#" class="card-title-link">Cloud Architecture</a></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">AWS, Azure & GCP</h6>
+                                <p class="card-text">Building scalable and resilient infrastructures on major cloud platforms. Implementing best practices for security, performance, and cost optimization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Learn Card 6 -->
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#" class="card-title-link">Cloud Architecture</a></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">AWS, Azure & GCP</h6>
+                                <p class="card-text">Building scalable and resilient infrastructures on major cloud platforms. Implementing best practices for security, performance, and cost optimization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Learn Card 7 -->
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#" class="card-title-link">Cloud Architecture</a></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">AWS, Azure & GCP</h6>
+                                <p class="card-text">Building scalable and resilient infrastructures on major cloud platforms. Implementing best practices for security, performance, and cost optimization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Learn Card 8 -->
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#" class="card-title-link">Cloud Architecture</a></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">AWS, Azure & GCP</h6>
+                                <p class="card-text">Building scalable and resilient infrastructures on major cloud platforms. Implementing best practices for security, performance, and cost optimization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Learn Card 9 -->
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#" class="card-title-link">Cloud Architecture</a></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">AWS, Azure & GCP</h6>
+                                <p class="card-text">Building scalable and resilient infrastructures on major cloud platforms. Implementing best practices for security, performance, and cost optimBuilding scalable and resilient infrastructures on major cloud platforms. Implementing best practices for security, performance, and cost optimizationBuilding scalable and resilient infrastructures on major cloud platforms. Implementing best practices for security, performance, and cost optimizationBuilding scalable and resilient infrastructures on major cloud platforms. Implementing best practices for security, performance, and cost optimizationBuilding scalable and resilient infrastructures on major cloud platforms. Implementing best practices for security, performance, and cost optimizationization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                                                  
+                   <!-- End of Learn Cards --> 
                 </div>
             </div>
             
+
+
+
             <!-- Earn Tab -->
             <div class="tab-pane fade" id="earn-tab-pane" role="tabpanel" aria-labelledby="earn-tab" tabindex="0">
                 <div class="row g-4">
@@ -167,6 +235,11 @@
                 </div>
             </div>
             
+
+
+
+
+
             <!-- Yearn Tab -->
             <div class="tab-pane fade" id="yearn-tab-pane" role="tabpanel" aria-labelledby="yearn-tab" tabindex="0">
                 <div class="row g-4">
@@ -219,7 +292,7 @@
     </main>
 
     <footer class="container py-4 text-center text-muted">
-        <p>&copy; 2023 Kevin Terhar. All rights reserved.</p>
+        <p>&copy; 2025 Kevin Terhar. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS Bundle with Popper -->
