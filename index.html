@@ -42,8 +42,8 @@
             <div class="row align-items-center">
                 <div class="col-md-10">
                     <h1>Kevin Terhar</h1>
-                    <p class="tagline">
-                        <span style="white-space: nowrap;">"I have not failed. I've just found 10,000 ways that won't work." - T. Edison</span>
+                    <p>
+                        <span>"I have not failed. I've just found 10,000 ways that won't work." - T. Edison</span>
                         <br>
                         I'm currently in the 300-500 ballpark
                     </p>
@@ -51,6 +51,7 @@
                 <div class="col-md-2 text-md-end">
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/kevin-terhar/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/kterhar-edu" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                         <a href="https://discordapp.com/users/1309134804616478764" target="_blank" aria-label="Discord Profile"><i class="fab fa-discord"></i></a>
                     </div>
                 </div>
@@ -61,7 +62,22 @@
 
     <!-- Main Content Area -->
     <main class="container py-4">
-        <!-- Navigation Tabs -->
+        <!-- Mobile Navigation Dropdown (hidden on desktop) -->
+        <div class="mobile-nav-dropdown">
+            <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle w-100 text-start" type="button" id="mobileNavDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span id="currentTabText">Learning</span>
+                </button>
+                <ul class="dropdown-menu w-100" aria-labelledby="mobileNavDropdown">
+                    <li><a class="dropdown-item mobile-nav-item active" href="#" data-tab="learn-tab-pane">Learning</a></li>
+                    <li><a class="dropdown-item mobile-nav-item" href="#" data-tab="earn-tab-pane">Earning</a></li>
+                    <li><a class="dropdown-item mobile-nav-item" href="#" data-tab="yearn-tab-pane">Yearning</a></li>
+                    <li><a class="dropdown-item mobile-nav-item" href="#" data-tab="projects-tab-pane">Side Projects</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Desktop Navigation Tabs (hidden on mobile) -->
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="learn-tab" data-bs-toggle="tab" data-bs-target="#learn-tab-pane" type="button" role="tab" aria-controls="learn-tab-pane" aria-selected="true">Learning</button>
